@@ -28,7 +28,7 @@ function Form() {
 
         <button
           onClick={addField}
-          className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-medium"
+          className="bg-blue-500 hover:cursor-pointer hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-medium"
         >
           + Add Field
         </button>
@@ -54,6 +54,7 @@ function Form() {
               </button>
             </div>
           ))}
+          
         </div>
 
         {/* Display Values */}
