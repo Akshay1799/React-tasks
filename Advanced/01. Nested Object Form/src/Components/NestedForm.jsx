@@ -31,7 +31,7 @@ function NestedForm() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-fit ">
+    <div className="flex flex-col items-center justify-center h-fit">
       <div className="bg-white shadow-lg rounded-xl p-8 w-[400px] flex flex-col gap-4 border">
         <h2 className="text-xl font-semibold text-gray-800 mb-2">
           Nested Object Form 
