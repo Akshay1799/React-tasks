@@ -27,8 +27,8 @@ function Counter() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
       <div className="bg-white shadow-lg rounded-xl p-8 w-[400px] flex flex-col items-center gap-6">
-        <h2 className="text-2xl font-semibold text-gray-800">
-          🔄 Undoable Counter
+        <h2 className="  text-2xl font-semibold text-gray-800">
+          Undoable Counter
         </h2>
 
 
