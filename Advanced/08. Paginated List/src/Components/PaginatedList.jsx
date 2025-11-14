@@ -13,7 +13,7 @@ function PaginatedList() {
   const endIndex = startIndex + itemsPerPage;
   const currentItems = items.slice(startIndex, endIndex);
 
-  // 5️⃣ Navigation functions
+  
   const goToNextPage = () => {
     if (currentPage < totalPages) setCurrentPage(currentPage + 1);
   };
@@ -45,7 +45,6 @@ function PaginatedList() {
         </ul>
 
         <div className="flex justify-center items-center gap-2">
-          {/* Prev */}
           <button
             onClick={goToPrevPage}
             disabled={currentPage === 1}
@@ -54,7 +53,6 @@ function PaginatedList() {
             Prev
           </button>
 
-          {/* Page numbers */}
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i}
@@ -69,7 +67,6 @@ function PaginatedList() {
             </button>
           ))}
 
-          {/* Next */}
           <button
             onClick={goToNextPage}
             disabled={currentPage === totalPages}
