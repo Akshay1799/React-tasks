@@ -12,8 +12,6 @@ const RandomQuote = () => {
             const randomIndex = Math.floor(Math.random()*data.quotes.length)
             setQuote(data.quotes[randomIndex]);
 
-            
-            return clearInterval(timer)
         } catch (error) {
             console.error('Fetching error: ', error);
         }
