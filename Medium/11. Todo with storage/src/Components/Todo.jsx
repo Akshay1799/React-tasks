@@ -4,12 +4,8 @@ import { useState, useEffect } from 'react'
 const Todo = () => {
     const [text, setText] = useState('');
     const [todos, setTodos] = useState(() => {
-        try {
-            const saved = JSON.parse(localStorage.getItem("todos"));
-            return Array.isArray(saved)?saved:[];
-        } catch  {
-            return [];
-        }
+        const saved = JSON.parse(localStorage.getItem("todos"));
+        return saved?saved:[];
     });
 
     
